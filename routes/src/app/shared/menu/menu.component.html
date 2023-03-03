@@ -2,13 +2,28 @@
   <nav>
     <ul>
       <li>
-        <a routerLink="/">Home</a>
+        <a
+          routerLink="/"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
       </li>
       <li>
-        <a routerLink="/sobre">Sobre</a>
+        <a
+          routerLink="/sobre"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Sobre</a
+        >
       </li>
       <li>
-        <a routerLink="['/404']">error</a>
+        <a
+          [routerLink]="['/404']"
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Error</a
+        >
       </li>
     </ul>
   </nav>
